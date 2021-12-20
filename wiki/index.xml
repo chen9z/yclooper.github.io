@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wikis on yclooper</title><link>http://example.org/wiki/</link><description>Recent content in Wikis on yclooper</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://example.org/wiki/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>http://example.org/wiki/%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://example.org/wiki/%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83/</guid><description>一些思考 应该分包还是分 module 有没有一个优秀的命名规范？ 三层还是四层？ 是每层都要一个 POJO 嘛？ 是效率还是阅读性？ 单测到底该如何写？ 微服务之间的服务如何解耦？</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wikis on yclooper</title><link>http://example.org/wiki/</link><description>Recent content in Wikis on yclooper</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="http://example.org/wiki/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>http://example.org/wiki/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://example.org/wiki/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid><description> 什么是软件架构？
+计算机系统的软甲架构是构建这个系统所需要的一组结构，包括软件元素、他们之间的关系记忆两者的属性
+软件架构解决的是什么问题？
+是非功能需求，既质量属性需求。比如拓展性、可靠性、维护性、可测试性、可部署性等
+分层架构错误的表示了精心设计的应用程序中的依赖关系。
+业务逻辑通常定义为数据访问方法或接口库 数据持久化层则定义了实现存储库接口的 DAO 类 他们的依赖关系与分层架构所描述的相反
+六边形架构是分层架构风格的替代品。以业务逻辑为中心组织逻辑视图，应用程序有一个或多个入站适配器，而不是表示层，它通过调用业务逻辑来处理外部的请求。同样，应用程序具有一个或多个出站适配器，而不是持久化层。这些出站适配器由业务逻辑调用并调用外部应用程序。此架构的一个关键特征和优点是业务逻辑不依赖适配器。相反，各种适配器都依赖业务逻辑
+服务是一个单一的、可独立部署的软件组织，它实现了一些有用的功能
+不应该使用共享库，而是共享服务
+微服务并不是很小的服务，不关注服务大小
+定义微服务架构
+定义系统操作 定义服务（两种策略：一种源于业务架构学派的策略是定义与业务能力相对应的服务。另一种是围绕奥奥领域驱动设计的子域来分解和设计服务） 定义服务 API 和 协作方式 领域驱动设计
+面向对象 词汇表（通用语言） 闭包原则
+聚合的规则
+值引用聚合根，只能通过聚合根上的方法更新 聚合间的引用必须使用主键 在一个事务中、只能创建或更新一个聚合 聚合是一个对象（实体），怎么发布事件、处理逻辑呢？
+疑问 52 系统操作和微服务是怎么映射的？</description></item><item><title/><link>http://example.org/wiki/%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://example.org/wiki/%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84%E7%9A%84%E6%80%9D%E8%80%83/</guid><description>一些思考 应该分包还是分 module 有没有一个优秀的命名规范？ 三层还是四层？ 是每层都要一个 POJO 嘛？ 是效率还是阅读性？ 单测到底该如何写？ 微服务之间的服务如何解耦？ OrderService 和 OrderDomainService 对于方法的界限是什么？ 聚合</description></item></channel></rss>
